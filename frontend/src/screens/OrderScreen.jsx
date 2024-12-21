@@ -68,6 +68,7 @@ const OrderScreen = () => {
         refetch();
         toast.success('Payment successful');
     }
+
     function onError(err) {
         toast.error(err.message);
     }
@@ -131,7 +132,7 @@ const OrderScreen = () => {
                                 <ListGroup.Item key={index}>
                                     <Row>
                                         <Col md={1}>
-                                            <Image src={item.image} alt={item.name} fluid rounde/>
+                                            <Image src={item.image} alt={item.name} fluid rounded/>
                                         </Col>
                                         <Col>
                                             <Link to={`/product/${item.product}`}>
